@@ -1,0 +1,4 @@
+[submodule "deps/GW2APIClient"]
+	path = deps/GW2APIClient
+	url = https://github.com/GW2ToolBelt/GW2APIClient
+	branch = tmm/wasm-support

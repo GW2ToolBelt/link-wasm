@@ -1,0 +1,15 @@
+/.gradle
+
+!/.idea
+/.idea/*
+!/.idea/copyright
+!/.idea/inspectionProfiles
+!/.idea/runConfigurations
+!/.idea/scopes
+!/.idea/icon.png
+
+/.kotlin
+
+/build
+
+/node_modules

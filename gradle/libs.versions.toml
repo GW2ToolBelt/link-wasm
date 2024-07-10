@@ -1,0 +1,58 @@
+[versions]
+coil = "3.0.0-alpha06"
+compose = "1.7.0-alpha01"
+gw2chatlinks = "1.0.0"
+gw2api = "0.5.0"
+junit = "5.10.3"
+kotlin = "2.0.10-RC-510"
+kotlinx-coroutines = "1.8.1"
+ktor = "3.0.0-wasm2"
+
+
+[libraries]
+# com.gw2tb.gw2api - GW2APIClient
+gw2api-client = { module = "com.gw2tb.gw2api:api-client", version.ref = "gw2api" }
+gw2api-client-ktor = { module = "com.gw2tb.gw2api:api-client-ktor", version.ref = "gw2api" }
+
+# com.gw2tb.gw2chatlinks - GW2ChatLinks
+# https://github.com/GW2ToolBelt/GW2ChatLinks
+gw2chatlinks = { module = "com.gw2tb.gw2chatlinks:gw2chatlinks", version.ref = "gw2chatlinks" }
+
+# io.coil-kt.coil3 - Coil
+# https://github.com/coil-kt/coil
+coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil" }
+
+# io.ktor - Ktor
+# https://github.com/ktorio/ktor
+ktor-client-apache = { module = "io.ktor:ktor-client-apache", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+# org.jetbrains.kotlin - Kotlin
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+
+# org.jetbrains.kotlin:kotlin-gradle-plugin  - Kotlin Gradle Plugin
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin ", version.ref = "kotlin" }
+
+# org.jetbrains.kotlinx:kotlinx-coroutines-[...] - kotlinx.coroutines
+# https://github.com/Kotlin/kotlinx.coroutines
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+
+# org.junit - JUnit
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+
+
+[plugins]
+# org.jetbrains.compose - Compose
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+
+# org.jetbrains.kotlin - Kotlin Gradle plugin
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
